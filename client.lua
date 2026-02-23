@@ -356,6 +356,10 @@ AddEventHandler('onResourceStop', function(resName)
     ClearMinimap()
 end)
 
+AddEventHandler('onResourceStart', function(resName)
+    if resName ~= GetCurrentResourceName() then return end
+    print('Extended map tiles, orginally created by: L1CKS, Improved by: Lughworks')
+end)
 -- ----------------------------
 -- Commands (optional quality-of-life)
 -- ----------------------------
