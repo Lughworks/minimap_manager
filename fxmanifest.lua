@@ -1,15 +1,18 @@
-fx_version "cerulean"
-games {"gta5"}
-lua54 "yes"
+fx_version 'cerulean'
+game 'gta5'
+this_is_a_map 'yes'
+description 'Extended map tiles, orginally created by: L1CKS, Improved by: Lughworks'
 
-name "Minimap Manager"
-description "Adds extra tiles for textures on the minimap and pause menu map."
-version "2.0.0"
+lua54 'yes'
 
 files {
     "MINIMAP_LOADER.gfx"
 }
 
+shared_scripts {
+    'config.lua'
+}
+
 client_scripts {
-	"minimapmanager.lua"
+    'client.lua'
 }
